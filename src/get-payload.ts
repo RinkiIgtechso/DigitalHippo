@@ -17,7 +17,7 @@ const transporter = nodemailer.createTransport({
     pass: process.env.RESEND_API_KEY,
   },
 })
-
+ 
 let cached = (global as any).payload
 
 if (!cached) {
